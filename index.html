@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Tasks</title>
+  
+  <script type='text/javascript' src='jquery-1.10.2.min.js'></script>
+  
+  
+  
+  <script type="text/javascript" src='jquery.mobile-1.3.2.min.js'></script>
+  <link rel="stylesheet" type="text/css" href="jquery.mobile-1.3.2.min.css">
+  
+  <script type='text/javascript' src="underscore-min.js"></script>
+  <script type='text/javascript' src="backbone-min.js"></script>
+  <script type='text/javascript' src="app.js"></script>
+</head>
+<body>
+  <div data-role="page" id="main-page">
+    <div data-role="header" 
+    data-theme="a"
+    style="text-align:center">    
+    Tasks
+    </div>
+    <div id="app-view" style="text-align:center">
+        <input type="text" id="task"
+        size="30"
+        placeholder="Enter a task"/>
+        <button id="add" data-theme="b"
+        data-inline="true">Add</button>
+        <ul data-role="listview" id="master-list">
+        </ul>
+    </div>
+</div>
+<div data-role="page" id="details-page">
+    <div data-role="header" style="text-align:center">
+        Details
+    </div>
+    <div style="text-align:center" 
+    id="details-content">
+        <div id="details-view"
+        data-role="fieldcontent">
+            <label for="title">
+                Title
+            </label>
+            <input type="text"
+            id="details-title"/>
+        </div>	
+        <a href="#main-page"
+        id="goback"
+        data-role="button"
+        data-inline="true"
+        data-theme="d">Back</a>
+        <button
+        id="delete"
+        data-role="button"
+        data-inline="true"
+        data-theme="d">Delete</button>
+        <button
+        id="save"
+        data-role="button"
+        data-inline="true"
+        data-theme="d">Save</button>
+    </div>
+</div>
+
+  
+</body>
+
+
+</html>
+
